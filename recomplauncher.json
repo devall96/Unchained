@@ -26,7 +26,10 @@
       "id": "main",
       "format": "toml",
       "file": [
+        { "path": "{data}/settings.toml", "if": "{data}/settings.toml" },
         { "path": "{install}/settings.toml", "if": "{install}/Unchained.exe" },
+        { "path": "{install}/usr/bin/settings.toml", "if": "{install}/usr/bin/settings.toml" },
+        { "path": "{data}/settings.toml", "if": "{install}/usr/bin/Unchained" },
         { "path": "{install}/settings.toml", "if": "{install}/portable.txt" },
         { "path": "{local}/Unchained/settings.toml" }
       ]
@@ -36,21 +39,32 @@
     "{install}/hdd/E/UDATA",
     "{install}/settings.toml",
     "{local}/Unchained/hdd/E/UDATA",
-    "{local}/Unchained/settings.toml"
+    "{local}/Unchained/settings.toml",
+    "{data}/hdd/E/UDATA",
+    "{data}/settings.toml"
   ],
   "folders": {
     "data": [
+      { "path": "{data}", "if": "{data}/settings.toml" },
       { "path": "{install}", "if": "{install}/Unchained.exe" },
+      { "path": "{install}/usr/bin", "if": "{install}/usr/bin/settings.toml" },
+      { "path": "{data}", "if": "{install}/usr/bin/Unchained" },
       { "path": "{install}", "if": "{install}/portable.txt" },
       { "path": "{local}/Unchained" }
     ],
     "saves": [
+      { "path": "{data}/hdd", "if": "{data}/hdd" },
       { "path": "{install}/hdd", "if": "{install}/Unchained.exe" },
+      { "path": "{install}/usr/bin/hdd", "if": "{install}/usr/bin/hdd" },
+      { "path": "{data}/hdd", "if": "{install}/usr/bin/Unchained" },
       { "path": "{install}/hdd", "if": "{install}/portable.txt" },
       { "path": "{local}/Unchained/hdd" }
     ],
     "logs": [
+      { "path": "{data}/logs", "if": "{data}/logs" },
       { "path": "{install}/logs", "if": "{install}/Unchained.exe" },
+      { "path": "{install}/usr/bin/logs", "if": "{install}/usr/bin/logs" },
+      { "path": "{data}/logs", "if": "{install}/usr/bin/Unchained" },
       { "path": "{install}/logs", "if": "{install}/portable.txt" },
       { "path": "{local}/Unchained/logs" }
     ]
