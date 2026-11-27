@@ -164,7 +164,7 @@ Whiplash turned out to be an unusual Xbox game, and the recompiler's runtime cou
 
 **Needs:** Windows 10 or 11 (64-bit) and a graphics card with Vulkan 1.3 or Direct3D 12 (any AMD, NVIDIA or Intel card from the last several years). Nothing else to install: the compiler and the C++ runtime come with Unchained.
 
-1. Download **`Unchained-0.1.1-Windows-x64-Setup.exe`** (55 MB) from the [latest release](https://github.com/devall96/Unchained/releases/latest) and run it. It installs for your user only (no admin), to `C:\Unchained` by default; avoid *Program Files*, since Unchained keeps its data beside itself. Prefer no installer? `Unchained-0.1.1-Windows-x64.zip` (83 MB) works the same: extract it to a folder you can write to.
+1. Download **`Unchained-0.1.2-Windows-x64-Setup.exe`** (55 MB) from the [latest release](https://github.com/devall96/Unchained/releases/latest) and run it. It installs for your user only (no admin), to `C:\Unchained` by default; avoid *Program Files*, since Unchained keeps its data beside itself. Prefer no installer? `Unchained-0.1.2-Windows-x64.zip` (83 MB) works the same: extract it to a folder you can write to.
 2. **About the Windows warning:** Unchained isn't code-signed yet, so SmartScreen may say *"Windows protected your PC"*. Click **More info → Run anyway**.
 3. Start **Unchained** (it opens the Configuration app the first time). On **GAME FILES**, choose your disc image or game folder. It checks the release, copies the files and builds the game's code once, with its progress on the same page.
 4. Press **PLAY**. From then on, Unchained starts straight into the game.
@@ -173,7 +173,7 @@ Whiplash turned out to be an unusual Xbox game, and the recompiler's runtime cou
 
 **Needs:** a 64-bit distro from about 2022 on (glibc 2.35 or newer: Ubuntu 22.04, Debian 12, Fedora 36, SteamOS 3 and later) and a **Vulkan 1.3 driver** (Mesa for AMD and Intel, or NVIDIA's own driver). The compiler is inside the AppImage, so there's nothing else to install.
 
-1. Download **`Unchained-0.1.1-Linux-x86_64.AppImage`** (148 MB, one file with everything inside) from the [latest release](https://github.com/devall96/Unchained/releases/latest).
+1. Download **`Unchained-0.1.2-Linux-x86_64.AppImage`** (148 MB, one file with everything inside) from the [latest release](https://github.com/devall96/Unchained/releases/latest).
 2. Make it executable (right-click → Properties → *Allow executing file as program*, or `chmod +x Unchained-*.AppImage`) and run it. It adds **Unchained** and **Unchained Configuration** to your applications menu.
 3. Choose your disc image or game folder in the Configuration app, then press **PLAY**, as on Windows.
 
